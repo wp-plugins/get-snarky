@@ -266,7 +266,7 @@ function snarky_css() {
 	<style type='text/css'>
 	#snarky_admin {
 		position: absolute;
-		top: 4.2em;
+		top: 6.2em;
 		margin: 0;
 		padding: 0;
 		$x: 215px;
