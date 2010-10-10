@@ -4,7 +4,7 @@ Donate link: http://andrewnorcross.com/donate
 Tags: Funny, humor
 Requires at least: 2.8
 Tested up to: 3.0.1
-Stable tag: 1.41
+Stable tag: 1.42
 
 This is a simple 'replacement' plugin for the original Hello Dolly. It's just funnier.
 
@@ -37,6 +37,9 @@ Yep. That's it.
 
 
 == Changelog ==
+
+= 1.42 =
+* Personally, I'm getting tired of adding this section. 
 
 = 1.41 =
 * MORE FUNNY!

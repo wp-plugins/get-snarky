@@ -3,7 +3,7 @@
 Plugin Name: Get Snarky
 Plugin URI: http://wordpress.org/extend/plugins/get-snarky/
 Description: 'Inspired' by the original Hello Dolly plugin, this just spits out random stuff I find funny. Some are a bit NSFW. <b>Please note:</b> The original 'Hello Dolly' plugin is not required (or encouraged, for that matter).
-Version: 1.41
+Version: 1.42
 Author: Andrew Norcross
 Author URI: http://andrewnorcross.com
 */
@@ -26,39 +26,117 @@ Author URI: http://andrewnorcross.com
 
 function get_snarky_get_quote() {
 	/** These are my quotes */
-	$quotes = "Violence only works if you use it. So use it.
-Is this where I should start caring? No? When?	
+	$quotes = "Violence only works if you use it
 Don't hit kids. No seriously, they have guns now
+This champagne tastes empty without accompanying cocaine and hookers.
 Any reports that Ronnie James Dio has died of anything other than a dragon attack are false.
+If you wanted cake maybe you should have been born today, asshole.
 It's all about hugs & understanding. And spearguns. Don't forget the spearguns.
 I'm not a financial advisor so I had to find out on my own that ''Buy and Hold'' is a frowned upon lap dance strategy
 If you remember anything about the last time that one social media service went down, you're an asshole.
 An orchestra conductor is basically a guy who takes a shitload of credit for pushing the ''play'' button.
 I wish old people would just once admit shit's better now. We got breadless sandwiches motherfuckers.
 They're not all gems, folks.
+Beer. Because you never got a pony.
+In order to succeed, remember: when in doubt, turn left. X=7. ''C'' is the correct answer. And always, ALWAYS, caffeinate.
+For anyone wondering, this is my care face.
+I thought heaven was drinking 12-yr-old scotch & watching Bull Durham while getting a blowjob. But I'm an Orthodox Heathen.
+Okay, the caffeine thing may have been a bad idea.
+Don't you hate waking up unsure where you are with this vague panic that doesn't go away even when you realize you're home? No? Me, either.
+Mom tolerates me in a ''we can't eat him because we'd go to jail'' kind of way.
+Interesting how Twitter is becoming the alternative to talking to myself out loud. Now I'm just screaming across the ether.
+Telling me your problems do not alleviate mine. I don't need company in misery, I need you to do your job.
+[Indignant complaint] [Irony fail] [Alanis Morissette receives royalty]
+Dad: ''Glen Beck makes some good points.'' Me, to Mom: ''You sure you didn't fuck the mailman at least once?''
+She tell me, ''I think your having a meltdown.'' ''Like I have time for something meaningful and productive.''
+My ''I hate the holiday season'' rant seems to come earlier every year.
+Three words you never want to hear in sequence: Unhusked Pineapple Catheter.
+Almost got hit by a cab going the wrong way on a one way street. But he gave me a thumbs up, so it's cool, right?
+I probably shouldn't mention the fact that I'm burning down an Arby's right now. So don't mention it, ok?
+Dad's OK. Except, of course, the creepy skull collecting thing. Quite a lot of those where I grew up, actually.
+She's the kind of girl that puts the ''Fuck You'' in ''Bitch''
+Crying over a cremated corpse will not rehydrate it.
+Thinking about regrowing the mustache. There just doesn't seem to be enough creepy people around.
+Hey, Monday, you're late, but...no, no, just because you're late doesn't mean we have to start over. We do? Fuck you, Monday.
+Wow. I'm an angry, hypocritical little pissant today, huh?
+Talk Like A Pirate Day: 24 hours of people barely fluent in their native tongue attempting archaic slang because the internet said so.
+Finding an animal bone on the roof of your vehicle falls under the category of Disturbing but boarders directly on Creeped The Fuck Out.
+I don't really remember why I filled the bathtub with gasoline, but here we are.
+Waiting for the day when people stand up for ideas and not ideals. Also waiting for a taco. Not sure which I want more.
+Nah, you're not complicated. String Theory? Now THAT shit is complicated.
 My friend just asked me if I watched the Hills finale. We are no longer friends.
+For those wondering what I will be for Halloween, I don't need a costume. I have a mustache.
+There is a Post-It note on my desk that says ''Gay Sex Flyer From High School.'' I really need to start a blog to explain that.
 Sometimes I think I can actually hear my liver telling me to go fuck myself.
 Just saw a custom license plate that read: BLACKMAN. PULMEOVR must have already been taken.
+Raining. I like to think they're God's tears. And why is God crying? Ben Affleck.
+If God didn't want you to punch a baby he would have given them a defense mechanism, like quills or something.
 When I hear someone say ''Git-R-Dun'' I want to ''Murder-Death-Kill.''
+Don't anthropomorphize your pets and pretend they speak through you. Mr. Widdy-Cuddles has more dignity than that.
+Either I'm seeing spots or being visited by shiny wee folk. Not sure which is preferable.
+Waking up naked & alone with a hazy memory of the night before isn't a big deal. Finding your underwear in the microwave is.
 If it weren't for television and the internet, I wouldn't know how to murder someone.
 My octopus fetish is getting out of control.
+Being smarter than the average bear isn't saying much considering the average bear has yet to discover fire or work with primitive tools.
+I read that drinking coffee boosts performance so I did and I broke the treadmill and punched a baby and I can't unclench my jaw LIGHTENING!
+The five trillionth digit of Pi is a 2. If you find this interesting, contact me and for a fee, I can teach you how to get laid instead.
+I''m currently battling my sexual addiction to waffles. Stupid, sexy waffles.
+I love collective nouns: a pod of dolphins, a mob of kangaroos, a Gosselin of douches.
+When your mother asks if you are sexually active, the correct response is not ''No, I just lie there.''
+If you can fold a fitted sheet, you're obviously a witch.
+My coding ability is slightly better than a drunk horse with dyslexia. So if I think your code is shit, guess what? Your code is SHIT.
+Iggy Pop is worth a million in prizes. You? Twelve bucks. Tops.
 Things not to say in a meeting: ''You're either a liar or an idiot. Pick one and let me insult you accordingly.''
 What color of eyeshadow will bring out the hopelessness in my cold, dead eyes?
 I may have come across as confused and uninterested in that business meeting. Actually, I was totally drunk.
 I just hit a squirrel. He didn't even see my bat coming. Just ran right out in front of it.
 I heard that if you sneeze right at the point of orgasm, that you'll open some kind of secret portal.
 Hey hippie, you know what goes well with your iPad? A uterus.
+I am not the walrus. I am, however, very high.
+I didn't do the punch a baby joke or the cremation gag. How far out of line could I have been?
+Yelly yelly screamy screamy stabby stabby seems to be the preferred business model around here. In other news, ow.
+I bet Paul McCartney only dates two-legged women now.
+Just threw away my McGriddle wrapper at Whole Foods. The staff would've been less horrified if I'd discarded a dead hooker instead.
+I''m not trying to brag or anything, but my in-laws are dead.
+Been so long since I've done laundry I need to buy socks to make it through the week. I know exactly what this says about me.
+Getting a Superman tattoo doesn't make you Superman. It makes you Supergayballs.
+Yes, I know it's easier to pillage then raze, but don't do things the easy way. Hush now. Nap time.
+I think we'd be a happier society in general if the Magic 8-Ball was a High School Guidance Counselor.
+And with that, I'm off to work. Those unicorns aren't going to feed themselves.
+Wow. I'm full of douche today. Guess I should go get a spray tan.
+Blacks, Asians, Mexicans... Who cares? No one is doing shit about the real problem. Gingers are out there, right now, freckle fucking.
+Two Duraflame logs. A box of Milk Bones. A bottle of Astroglide. Try to figure me out, Walgreens cashier. Just try.
+I only smell like booze 'cause I got a drink spilled on me. The smell of desperation just comes naturally.
 Hey, remember that time that I gave a shit what you thought? No? Exactly.
+Need more people to show up for your event? Add the word ''mosque'' somewhere on the flier. Guarantees an uptick of 20%.
 Today's shaping up to be yesterday's slightly more attractive but still not quite fuckable sister.
 Taking the moral high road. LOL! Kidding! I'm burying her in the desert.
+People who find all their answers in the Bible aren't asking any of the important questions.
 Work is starting a ''Fun Committee.'' I'd consider joining if we could replace ''Fun'' with ''Stab.''
 I will rule with the Iron Fist of Apathy. Or not. Whatever.
+I prefer to call whiskey ''Uncle Joseppi's Punchy Juice.''
 It took Michelangelo four years to paint the Sistine Chapel. Its taken my Sandwich Artist one year longer than that to make my fucking sub.
+If a Greek god can come back as a maiden-raping swan, surely Christ can appear on my Pop Tart.
+Not everyone is trying to hit on your chick so stop evil eyeing. I mean, yeah, I am trying to hit on her, but stop being a bitch about it.
+I should be excused from this meeting I'm in on the grounds that I don't give a fuck and I would rather be sleeping at my desk.
+I'm an organ donor, but I'm pretty sure all they're going to use is my liver for ''after'' photos.
+I believe the children are our future. Also, I believe our future is fucked.
+Children's laughter really is the best medicine. well, except for heroin.
+I would probably have a lot more friends if I didn't hate other people so much.
+I got two words for you: I am freaking horrible at math.
+If it looks like a douchebag, and smells like a douchebag, then I must be walking by an Abercrombie & Fitch store.
 Stop looking at me like salamander wrestling isn't fucking hardcore.
+My downward spiral would make a great theme park ride.
+Sometimes life leaves a hundred dollar bill on your dresser, and you don't realize until later that it's because it fucked you.
 We all bleed the same color. Then again, you'd have to stab everyone to verify that.
+Every clown has a silver lining. Be sure to remove this lining before use.
 If I ask you what's up and you say ''the sky'', they will never find your body. Ever.
+I drink a lot, so operating this phone is like fucking rocket algebra science geometry magic.
 Rape whistles are kind of annoying. I propose a rape flute.
+Lemme tell you outright... We're bad influences, all around.
+If you ever question yourself, your life choices, your sanity...just watch an episode of Hoarders and you'll be all good.
 If you put ketchup on your eggs no one will ever love you.
+Turns out, pounding a wooden stake through a vampire's heart works even if the guy's not a vampire.
 Dear Mom: Your son's hair length has crossed the line from ''hip kid'' to ''my mother wanted a little girl''.
 Not sure if you're a pretentious douchebag? Do you buy honey in a plastic flip-top bear? No? Pretentious douchebag.
 The monkey Sarah Palin uses to tweet for her is hilarious. It's almost like English, but with lots of monkey angst.
@@ -67,6 +145,7 @@ Has anyone actually seen this ''constitution''? Not being able to search my neig
 I got a sunburn and it looks like Jesus's face. I'm selling my leg on eBay. Starting bid .99¢
 It's a Replacements kind of day. Not so much the music as much as I'm having beer for breakfast.
 Tell one anorexic she looks ugly when she cries and suddenly I'M the asshole.
+Back in my day, werewolves showed some respect for their traditions and played basketball at least once in every movie.
 You know that moment, when your dad sends you to Wal Mart to buy your mom a Snuggie? That's when your life officially jumps the shark.
 Looks like the number one cause of pedophilia is still sexy children.
 No, no. Continue writing that creepy letter to your ex. Nothing rekindles love like Wing Dings.
@@ -104,7 +183,6 @@ Words not used nearly enough: frolic, smite, huzzah. We need more frolicing and 
 Seriously, herons are a shit bird if there ever was one. I mean, at least pigeons can do flips and are cool with Mike Tyson.
 Kids, you don't have to listen in class anymore. The internet exists.
 Formspring: For when stars and RT's just aren't enough to keep you from crying yourself to sleep at night.
-Drugs - FUCK They Make Us Dance Awesome
 For you, Mother's Day is 1 day a year. For me, it's every day I tell her she's the best roommate a 29 yr old guy could have.
 Do not be afraid to use exclamation points in your writing. They can sense fear.
 I have caffeinated myself to a Zen-like state of enlightenment.
@@ -166,8 +244,12 @@ I haven't put on weight. Your eyes are fat.
 Been on hold so long I can't remember who I called. I have a credit card out and my pants off but that doesn't really narrow it down much.
 That belt really highlights where your waist would be if you had any self control.
 Was having trouble getting motivated today, but then ''Eye of the Tiger'' came on the radio and long story short I'm out beating people up.
+For the record, many countries spell certain English words differently. For example, Canadians spell ''health care'' as ''a basic human right''
+There's a thin line between wanting a child and wanting a vasectomy. That line is at the Disney Store.
+Joining a Facebook group about creative productivity is like buying a chair about jogging.
 This oatmeal tastes just like bacon because I threw it away and I'm eating bacon.
 Jesus might love me but my girlfriend gives me blowjobs so religion is stupid.
+Love is like a brick. You can build a house, or you can sink a dead body
 Give a man a fish, he'll eat for a day. Teach a man to fish, he'll eat for life. Give an octopus nunchuks, no one's eating fish ever again.
 Jeremiah was a bullfrog. Was a good friend o mine. Never understood a single word he said because he's a fucking bullfrog.
 If you shit your pants you get to go home early.
