@@ -25,7 +25,7 @@ Author URI: http://andrewnorcross.com
 */
 
 function get_snarky_get_quote() {
-	/** These are my quotes */
+	// These are my quotes
 	$quotes = "Violence only works if you use it
 Don't hit kids. No seriously, they have guns now
 I'm not sure if faking military service to eat for free at Applebees on Veterans Day is the most pathetic thing ever, but it's up there.
