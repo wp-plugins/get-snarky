@@ -26,7 +26,7 @@ Author URI: http://andrewnorcross.com
 function get_snarky_get_quote() {
 	/** These are my quotes **/
 	$snark = "Violence only works if you use it
-Don't hit kids. No seriously, they have guns now
+Don't hit kids. No seriously, they have guns now.
 I always think three steps ahead. Step three is usually involves stabbing.
 I put the ''I'' in ''I think you're an asshole.''
 The fact that women are walking around with purses all the time and not filling them with delicious pudding is beyond my comprehension.
