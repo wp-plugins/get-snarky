@@ -3,12 +3,11 @@
 Plugin Name: Get Snarky
 Plugin URI: http://wordpress.org/extend/plugins/get-snarky/
 Description: 'Inspired' by the original Hello Dolly plugin, this just spits out random stuff I find funny. Some are a bit NSFW. <b>Please note:</b> The original 'Hello Dolly' plugin is not required (or encouraged, for that matter).
-Version: 1.43
+Version: 1.44
 Author: Andrew Norcross
 Author URI: http://andrewnorcross.com
 */
-
-/*  Copyright 2010 Andrew Norcross
+/*  Copyright 2011 Andrew Norcross
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -25,14 +24,54 @@ Author URI: http://andrewnorcross.com
 */
 
 function get_snarky_get_quote() {
-	// These are my quotes
-	$quotes = "Violence only works if you use it
+	/** These are my quotes **/
+	$snark = "Violence only works if you use it
 Don't hit kids. No seriously, they have guns now
+I always think three steps ahead. Step three is usually involves stabbing.
+I put the ''I'' in ''I think you're an asshole.''
+The fact that women are walking around with purses all the time and not filling them with delicious pudding is beyond my comprehension.
+If you were stranded on an island and could only bring one Dave Matthews album, how would you kill yourself?
+Pajama jeans are finally giving women who wear sweat pants to bingo the touch of class they've been looking for.
+There is no ''I'' in ''team'' but there is 3 U's in SHUT THE FUCK UP.
+Anyone who says an onion is the only vegetable that will make you cry has never been hit in the face with a pumpkin.
+Who in hell decided A: I can''t have a pet sloth in this County and B: Ain''t allowed to make him step on my homesmades wine grapes!?!?
+How the hell do these guys on TV convince women to commit murder for them? I can't even convince one to help me bury a body.
+If it hadn't been so funny, I would have been really pissed at the homeless person who narrated my walk of shame this morning.
+To some people, ''I'm turning into my parents'' just means ''I am snorting cocaine while listening to Huey Lewis and the News''
+Pretty sure it's legal to fire a tranquilizer dart at any child that''s making pterodactyl sounds.
+Kerfuffle over my admission that being late was due to a hangover. You'd think I put their last bit of childhood wonder in a snuff film.
+You know you were doing something awesome when the police decide burning down your house is the most reasonable way of dealing with you
+Having sex is a lot like chopping wood: You make similar faces and they're both easier with a chainsaw.
+The internet really hates pants.
+Hey, remember that time I put rohypnol in your drink? EXACTLY!
+I turn into another person when I'm drunk. I'm like Dr. Jekyll and Mr. Pound-a-bottle-of-whiskey-cannon-ball-on-a-car-I-want-tacos.
+You can't tell me we've made progress as a society until we have a film where zombies & robots having sex is natural.
+Wheel of Fortunes is another damned rerun. Guess I'll go train my dog to be a homophobe.
+Boxed wine goes quicker than a stank on a shit tree when you drink it outa big gulp cup.
+A fish doesn't need a bicycle, asshole.
+Feels like it could be a piss-in-the-hamper sort of Friday night ahead.
+There is a subtle difference between ''quirky'' and ''I have a skin collection''. Subtle, but important.
+The iced coffee at 7-11 is wish-fulfillment for anyone who has ever wanted to drink a bag of caramels.
+I assume all cheap motel rooms smell like shotgun shells and herpes.
+This guy looked at me like I was the crazy one when I brought a glass of red wine to the mattress store. Idiot.
+Is the side effect of eating meatballs for seven consecutive meals still a Camaro?
+A midget in a bar is a great story waiting to happen.
+If you were in some old west gang and dragging a guy along the ground with your horse, It'd probably make you really mad to look back and see him reading a magazine.
+Whenever speaking while completely naked, imagine your audience is listening, instead of calling 911 and macing you.
+Never let a baby play with chemicals unless it's just a household product like bleach. Bleach is okay.
+If my four year old's breath is any indication, she's going to be a professional dragon by the time she's 15.
+Unproductive day? I don't think you heard me -- I unlocked *17* levels in Angry Birds.
+When my generation is old, viagra commercials will be all ''Has your disco stick lost its sparkle?'' and shit.
 I'm not sure if faking military service to eat for free at Applebees on Veterans Day is the most pathetic thing ever, but it's up there.
+There is a right way and a wrong way to defrost a chicken with a hair dryer. A lot of people don't know that.
+Never trust someone that wears colored contacts. They've already lied to you.
+There are a lot of people who are nice, talented & awesome with almost zero negativity. They fucking scare me.
 This champagne tastes empty without accompanying cocaine and hookers.
 I'm going to pretend I'm not a sexually frustrated loser who just got a little horny watching an educational video on submarines.
+Things not to say when discussing site design: ''If you think that looks good I'd hate to see your wife.''
 Tea Party members must go through a lot of throat lozenges.
 ''Every time you masturbate a kitten dies.'' Really? Show me my eight hundred thousand cute-as-buttons carcasses and then I'll believe you.
+Guy just rose past on a beach cruiser bicycle with ape hangers. Unaware there was a pussy division for biker gangs.
 I am lactose intolerant. And by ''lactose'' I mean ''I fucking hate people''
 It's weird how deer in headlights always seem to have that ''deer in the headlights look''.
 The only thing I love more than peeing in the shower is peeing in the shower while I'm using it.
@@ -48,6 +87,7 @@ An orchestra conductor is basically a guy who takes a shitload of credit for pus
 I wish old people would just once admit shit's better now. We got breadless sandwiches motherfuckers.
 Every time you say you say the word ''Huzzah!'' I think of a new way to kill you with a q-tip and/or handkerchief.
 They're not all gems, folks.
+I am superior to Albert Eistein in one significant way: he's fucking dead. 
 Beer. Because you never got a pony.
 Got into a fight today with a woman where we both screamed and called each other idiots. God, I love youth soccer.
 Scarves are just pants for your neck that you shouldn't ever wear.
@@ -61,12 +101,12 @@ Okay, the caffeine thing may have been a bad idea.
 Don't you hate waking up unsure where you are with this vague panic that doesn't go away even when you realize you're home? No? Me, either.
 Mom tolerates me in a ''we can't eat him because we'd go to jail'' kind of way.
 Interesting how Twitter is becoming the alternative to talking to myself out loud. Now I'm just screaming across the ether.
-Her: ''So which shirt should I wear – the polka dots or the stripes?'' Me: ''That’s like asking Hitler to pick his favourite kosher deli.''
+Her: ''So which shirt should I wear, the polka dots or the stripes?'' Me: ''That is like asking Hitler to pick his favorite kosher deli.''
 Don’t worry, baby, when your womb is all dried up and useless, I’ll keep you around. As my sidekick.
 Telling me your problems do not alleviate mine. I don't need company in misery, I need you to do your job.
 [Indignant complaint] [Irony fail] [Alanis Morissette receives royalty]
 Dad: ''Glen Beck makes some good points.'' Me, to Mom: ''You sure you didn't fuck the mailman at least once?''
-She tell me, ''I think your having a meltdown.'' ''Like I have time for something meaningful and productive.''
+She tell me, ''I think you are having a meltdown.'' ''Like I have time for something meaningful and productive.''
 My ''I hate the holiday season'' rant seems to come earlier every year.
 Three words you never want to hear in sequence: Unhusked Pineapple Catheter.
 Almost got hit by a cab going the wrong way on a one way street. But he gave me a thumbs up, so it's cool, right?
@@ -127,6 +167,7 @@ Two Duraflame logs. A box of Milk Bones. A bottle of Astroglide. Try to figure m
 I only smell like booze 'cause I got a drink spilled on me. The smell of desperation just comes naturally.
 Hey, remember that time that I gave a shit what you thought? No? Exactly.
 Need more people to show up for your event? Add the word ''mosque'' somewhere on the flier. Guarantees an uptick of 20%.
+If only I could get the internet to tell me I'm pretty. Then I'd be validated.
 Today's shaping up to be yesterday's slightly more attractive but still not quite fuckable sister.
 Taking the moral high road. LOL! Kidding! I'm burying her in the desert.
 People who find all their answers in the Bible aren't asking any of the important questions.
@@ -337,10 +378,10 @@ You can prevent crying while peeling onions by chewing gum. You can prevent cryi
 Emo: It's Like Goth, But For Pussies";
 
 	// Here we split it into lines
-	$quotes = explode("\n", $quotes);
+	$snark = explode("\n", $snark);
 
 	// And then randomly choose a line
-	return wptexturize( $quotes[ mt_rand(0, count($quotes) - 1) ] );
+	return wptexturize( $snark[ mt_rand(0, count($snark) - 1) ] );
 }
 
 // This just echoes the chosen line, we'll position it later
@@ -367,14 +408,13 @@ function snarky_css() {
 	<style type='text/css'>
 	#snarky_admin {
 		position: absolute;
-		top: 6.2em;
+		top: 0.8em;
 		margin: 0;
 		padding: 0;
-		$x: 215px;
+		$x: 200px;
 		font-size: 11px;
 		font-weight: bold;
 	}
-	#wphead {padding-bottom:20px;}
 	</style>
 	";
 }

@@ -1,10 +1,10 @@
 === Get Snarky ===
-Contributors: norcross
+Contributors: Andrew Norcross
 Donate link: http://andrewnorcross.com/donate
 Tags: Funny, humor
 Requires at least: 2.8
-Tested up to: 3.0.1
-Stable tag: 1.43
+Tested up to: 3.2
+Stable tag: 1.44
 
 This is a simple 'replacement' plugin for the original Hello Dolly. It's just funnier.
 
@@ -37,6 +37,9 @@ Yep. That's it.
 
 
 == Changelog ==
+
+= 1.44 =
+* Updated for the new 3.2 admin panel.
 
 = 1.43 =
 * Stop it. You're embarassing yourself. 
