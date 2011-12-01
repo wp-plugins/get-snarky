@@ -3,7 +3,7 @@
 Plugin Name: Get Snarky
 Plugin URI: http://wordpress.org/extend/plugins/get-snarky/
 Description: 'Inspired' by the original Hello Dolly plugin, this just spits out random stuff I find funny. Some are a bit NSFW. <b>Please note:</b> The original 'Hello Dolly' plugin is not required (or encouraged, for that matter).
-Version: 1.45
+Version: 1.44
 Author: Andrew Norcross
 Author URI: http://andrewnorcross.com
 */
@@ -24,12 +24,11 @@ Author URI: http://andrewnorcross.com
 */
 
 function get_snarky_get_quote() {
-	/** These are the quotes **/
+	/** These are my quotes **/
 	$snark = "Violence only works if you use it
 Don't hit kids. No seriously, they have guns now.
 I always think three steps ahead. Step three is usually involves stabbing.
 I put the ''I'' in ''I think you're an asshole.''
-I say tomato, you say some of the stupidest, most annoying shit I have ever heard.
 The fact that women are walking around with purses all the time and not filling them with delicious pudding is beyond my comprehension.
 If you were stranded on an island and could only bring one Dave Matthews album, how would you kill yourself?
 Pajama jeans are finally giving women who wear sweat pants to bingo the touch of class they've been looking for.
@@ -43,27 +42,20 @@ Pretty sure it's legal to fire a tranquilizer dart at any child that''s making p
 Kerfuffle over my admission that being late was due to a hangover. You'd think I put their last bit of childhood wonder in a snuff film.
 You know you were doing something awesome when the police decide burning down your house is the most reasonable way of dealing with you
 Having sex is a lot like chopping wood: You make similar faces and they're both easier with a chainsaw.
-If Zuckerberg really wanted to improve Facebook, he'd make it stabbable.
 The internet really hates pants.
-I think my baby is going to be a politician when he grows up because it appears he's full of nothing but shit.
 Hey, remember that time I put rohypnol in your drink? EXACTLY!
 I turn into another person when I'm drunk. I'm like Dr. Jekyll and Mr. Pound-a-bottle-of-whiskey-cannon-ball-on-a-car-I-want-tacos.
 You can't tell me we've made progress as a society until we have a film where zombies & robots having sex is natural.
 Wheel of Fortunes is another damned rerun. Guess I'll go train my dog to be a homophobe.
 Boxed wine goes quicker than a stank on a shit tree when you drink it outa big gulp cup.
 A fish doesn't need a bicycle, asshole.
-I'm ok with Christmas in July, but fuck this Easter in August bullshit.
-Synonym is an antonym for antonym, but antonym is not a synonym for synonym. And I'm not even high or anything.
 Feels like it could be a piss-in-the-hamper sort of Friday night ahead.
-Are waterbeds still a thing? What about penpals? I can't keep track of all this stuff anymore.
 There is a subtle difference between ''quirky'' and ''I have a skin collection''. Subtle, but important.
 The iced coffee at 7-11 is wish-fulfillment for anyone who has ever wanted to drink a bag of caramels.
 I assume all cheap motel rooms smell like shotgun shells and herpes.
 This guy looked at me like I was the crazy one when I brought a glass of red wine to the mattress store. Idiot.
 Is the side effect of eating meatballs for seven consecutive meals still a Camaro?
 A midget in a bar is a great story waiting to happen.
-The whole neighborhood seems offended by my son's trike nuts.
-Just ordered a cup of black coffee from Starbucks. Everyone stared.
 If you were in some old west gang and dragging a guy along the ground with your horse, It'd probably make you really mad to look back and see him reading a magazine.
 Whenever speaking while completely naked, imagine your audience is listening, instead of calling 911 and macing you.
 Never let a baby play with chemicals unless it's just a household product like bleach. Bleach is okay.
@@ -386,39 +378,40 @@ You can prevent crying while peeling onions by chewing gum. You can prevent cryi
 Emo: It's Like Goth, But For Pussies";
 
 	// Here we split it into lines
-	$snark = explode( "\n", $snark);
+	$snark = explode("\n", $snark);
 
 	// And then randomly choose a line
 	return wptexturize( $snark[ mt_rand(0, count($snark) - 1) ] );
 }
 
 // This just echoes the chosen line, we'll position it later
-function get_snarky_for_admin_display() {
+function get_snarky() {
 	$chosen = get_snarky_get_quote();
 	echo "<p id='snarky_admin'>$chosen</p>";
 }
 
-// Now we set that function up to execute when the admin_footer action is called
-add_action('admin_notices', 'get_snarky_for_admin_display');
-
 // This echos the quote for the sidebar quote
-function display_snarkyfor_sidebar () {
+function display_snarky() {
 	$chosen = get_snarky_get_quote();
 	echo $chosen;
 }
 
+// Now we set that function up to execute when the admin_footer action is called
+add_action('admin_footer', 'get_snarky');
+
 // We need some CSS to position the paragraph
 function snarky_css() {
 	// This makes sure that the posinioning is also good for right-to-left languages
-	$x = is_rtl() ? 'left' : 'right';
+	$x = ( 'rtl' == get_bloginfo( 'text_direction' ) ) ? 'left' : 'right';
 
 	echo "
 	<style type='text/css'>
 	#snarky_admin {
-		float: $x;
-		padding-$x: 15px;
-		padding-top: 5px;		
+		position: absolute;
+		top: 0.8em;
 		margin: 0;
+		padding: 0;
+		$x: 200px;
 		font-size: 11px;
 		font-weight: bold;
 	}
@@ -427,25 +420,27 @@ function snarky_css() {
 }
 
 add_action('admin_head', 'snarky_css');
-
+?>
+<?php
 /**
  * Get Snarky Sidebar Widget
  */
 class SnarkyWidget extends WP_Widget {
     /** constructor */
-	function SnarkyWidget() {
-		$widget_ops = array( 'classname' => 'snarky-widget', 'description' => 'Displays a random Get Snarky comment' );
+    function SnarkyWidget() {
+        parent::WP_Widget(false, $name = 'SnarkyWidget');
+		$widget_ops = array( 'classname' => 'snarky-widget', 'description' => 'Get Snarky Sidebar Display Widget' );
 		$this->WP_Widget( 'snarky-widget', 'Snarky Widget', $widget_ops );
-	}
-		
+    }
+
     /** @see WP_Widget::widget */
     function widget($args, $instance) {		
         extract( $args, EXTR_SKIP );
 		echo $before_widget;
-		$title = empty($instance['title']) ? '' : apply_filters('widget_title', $instance['title']);
+		$title = empty($instance['title']) ? 'Get Snarky!' : apply_filters('widget_title', $instance['title']);
 		if ( !empty( $title ) ) { echo $before_title . $title . $after_title; };
 		echo '<p class="snarky">';
-		echo display_snarkyfor_sidebar();
+		echo display_snarky();
 		echo '</p>';
 		echo $after_widget;
 		?>
@@ -455,21 +450,20 @@ class SnarkyWidget extends WP_Widget {
     /** @see WP_Widget::update */
     function update($new_instance, $old_instance) {				
 	$instance = $old_instance;
-	$instance['title']	= strip_tags($new_instance['title']);
+	$instance['title'] = strip_tags($new_instance['title']);
         return $instance;
     }
 
     /** @see WP_Widget::form */
     function form($instance) {				
-        $instance = wp_parse_args( (array) $instance, array( 
-			'title'	=> 'Get Snarky!',
-			));
-		$title	= strip_tags($instance['title']);
+        $instance = wp_parse_args( (array) $instance, array( 'title' => '') );
+		$title = strip_tags($instance['title']);
         ?>
-		<p><label for="<?php echo $this->get_field_id('title'); ?>">Widget Title:<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></label></p>
-		<?php }
+			<p><label for="<?php echo $this->get_field_id('title'); ?>">Title: <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo attribute_escape($title); ?>" /></label></p>
+        <?php 
+    }
 
 } // class 
 
 // register widget
-add_action( 'widgets_init', create_function( '', "register_widget('SnarkyWidget');" ) );
+add_action('widgets_init', create_function('', 'return register_widget("SnarkyWidget");'));
