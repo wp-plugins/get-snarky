@@ -3,8 +3,8 @@ Contributors: Andrew Norcross
 Donate link: http://andrewnorcross.com/donate
 Tags: Funny, humor
 Requires at least: 2.8
-Tested up to: 3.2
-Stable tag: 1.44
+Tested up to: 3.3
+Stable tag: 1.45
 
 This is a simple 'replacement' plugin for the original Hello Dolly. It's just funnier.
 
@@ -37,6 +37,11 @@ Yep. That's it.
 
 
 == Changelog ==
+
+= 1.45 =
+* Updated for the new 3.3 admin panel.
+* Code cleanup for widget.
+* Added some funny.
 
 = 1.44 =
 * Updated for the new 3.2 admin panel.
