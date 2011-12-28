@@ -19,7 +19,7 @@ This section describes how to install the plugin and get it working.
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. That's it.
 
-New in 1.4: Also includes a sidebar widget if you want to share with the world. But don't blame me if your mother sees it and starts asking questions. The quotes can also be called any place in your theme with the <code><?php echo display_snarky(); ?></code> function.
+New in 1.4: Also includes a sidebar widget if you want to share with the world. But don't blame me if your mother sees it and starts asking questions. The quotes can also be called any place in your theme with the <code><?php echo display_snarkyfor_sidebar(); ?></code> function.
 
 == Frequently Asked Questions ==
 
