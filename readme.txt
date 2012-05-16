@@ -1,5 +1,5 @@
 === Get Snarky ===
-Contributors: Andrew Norcross
+Contributors: norcross
 Donate link: http://andrewnorcross.com/donate
 Tags: Funny, humor
 Requires at least: 2.8

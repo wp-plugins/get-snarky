@@ -1,27 +1,18 @@
 <?php
 /*
 Plugin Name: Get Snarky
-Plugin URI: http://wordpress.org/extend/plugins/get-snarky/
+Plugin URI: http://andrewnorcross.com/plugins
 Description: 'Inspired' by the original Hello Dolly plugin, this just spits out random stuff I find funny. Some are a bit NSFW. <b>Please note:</b> The original 'Hello Dolly' plugin is not required (or encouraged, for that matter).
-Version: 1.45
 Author: Andrew Norcross
+Version: 1.45
 Author URI: http://andrewnorcross.com
-*/
-/*  Copyright 2011 Andrew Norcross
 
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; version 2 of the License (GPL v2) only.
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+License: GNU General Public License v2.0 (or later)
+License URI: http://www.opensource.org/licenses/gpl-license.php
 
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-*/
+*/ 
+
 
 function get_snarky_get_quote() {
 	/** These are the quotes **/
